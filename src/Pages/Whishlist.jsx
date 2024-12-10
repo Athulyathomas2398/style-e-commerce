@@ -66,7 +66,7 @@ function Whishlist() {
 
           ))
           :
-          <div className="text-center"><img  src="https://www.our-eshop.com/frontend/assets/images/no-wish-list.png" alt="" /></div>
+          <div className="text-center"><img width="300px" src="https://www.our-eshop.com/frontend/assets/images/no-wish-list.png" alt="" /></div>
           
         }
 

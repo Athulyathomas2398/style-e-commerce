@@ -106,7 +106,7 @@ function Cart() {
           </div>
         </div>
         :
-        <div className='text-center'><img src="https://c9nutrition.com/img/empty-cart-yellow.png" alt="" /></div>
+        <div className='text-center'><img width="300px" src="https://c9nutrition.com/img/empty-cart-yellow.png" alt="" /></div>
         
         }
 
