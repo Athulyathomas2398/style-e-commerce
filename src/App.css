@@ -1,0 +1,11 @@
+#active{
+    background-color: black;
+    color: white;
+}
+@media (max-width:480px){
+    *{
+        overflow-x: hidden;
+    }
+  
+  
+  }

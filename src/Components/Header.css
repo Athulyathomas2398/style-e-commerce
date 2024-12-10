@@ -1,0 +1,14 @@
+.search{
+    margin-left: 500px;
+}
+.Link{
+    text-decoration: none;
+}
+
+@media (max-width:480px){
+   
+    .search{
+        margin-left: 0;
+    }
+
+}
