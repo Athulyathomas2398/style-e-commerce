@@ -48,11 +48,13 @@ function Cart() {
       {/* style={{marginTop:"100px"}} */}
       <div className="container-fluid" style={{ paddingTop: "100px" }}>
         <div >
-          <h3>Cart Summary</h3>
+          
         </div>
         {
+          
           userCart?.length>0?
           <div className="row mt-3">
+            <h3 className='text-danger'>Cart Summary</h3>
           <div className="col-lg-9">
             <table className='table'>
               <thead>
@@ -67,14 +69,16 @@ function Cart() {
               </thead>
               <tbody>
                 {
+                  
                   userCart?.map(item=>(
+                    
                     <tr>
                   <td>{item?.id}</td>
                   <td>{item?.title}</td>
                   <td><img width="50px" height="40px" src={item?.images} alt="" /></td>
                   <td>
                     <button onClick={()=>handleDecQuantity(item)} className='btn border border-light shadow fw-bold me-2'>-</button>
-                    <input  style={{ width: "30px", borderColor: "white" }} type="text" readOnly value={item?.quantity} />
+                    <input  style={{ width: "40px", borderColor: "white" }} type="text" readOnly value={item?.quantity} />
                     <button onClick={()=>dispatch(incQuantity(item?.id))} className='btn border border-light shadow fw-bold'>+</button>
                     
 
@@ -102,7 +106,7 @@ function Cart() {
           </div>
         </div>
         :
-        <div className='text-danger'>Empty</div>
+        <div className='text-center'><img src="https://c9nutrition.com/img/empty-cart-yellow.png" alt="" /></div>
         
         }
 

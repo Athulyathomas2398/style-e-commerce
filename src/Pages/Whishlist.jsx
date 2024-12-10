@@ -43,12 +43,14 @@ function Whishlist() {
         
 
         {/* cards */}
-        <h3 className="text-danger">Your Whish List</h3>
+        
 
         {
           displayWhishList?.length>0?
           displayWhishList.map(item=>(
+           
             <Col xl={3} lg={4} md={6} xs={12}>
+               <h3 className="text-danger">Your Whish List</h3>
             <Card style={{ width: '18rem', }}>
           <Card.Img variant="top" src={item.images[0]} style={{height:"350px"}} />
           <Card.Body>
@@ -64,7 +66,7 @@ function Whishlist() {
 
           ))
           :
-          <div className="danger">Nothing to display</div>
+          <div className="text-center"><img  src="https://www.our-eshop.com/frontend/assets/images/no-wish-list.png" alt="" /></div>
           
         }
 
