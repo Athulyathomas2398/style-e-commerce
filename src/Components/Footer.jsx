@@ -50,7 +50,7 @@ function Footer() {
                     </div>
 
                 </div>
-                <p className='text-center mt-4'>copyright &copy; Athulya, mediaplay, Built with react</p>
+                <p className='text-center mt-4'>copyright &copy; Athulya, style,e-cart, Built with react</p>
 
             </div>
  {/* </div> */}
